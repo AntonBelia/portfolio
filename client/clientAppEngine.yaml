@@ -1,0 +1,14 @@
+runtime: python39
+service: client
+
+handlers:
+  - url: /static
+    static_dir: build/static
+
+  - url: /(.*\.(js|css|map|ico|json|png|woff2|ttf))
+    static_files: build/\1
+    upload: build/.*\.(js|css|map|ico|json|png|woff2|ttf)
+
+  - url: /(.*)
+    static_files: build/index.html
+    upload: build/index.html

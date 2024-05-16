@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Project 1",
+    "demo": "https://example.com/project1",
+    "github": "https://github.com/user/project1",
+		"img": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQE..."
+  },
+  {
+    "name": "Project 2",
+    "demo": "https://example.com/project2",
+    "github": "https://github.com/user/project2",
+		"img": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQE..."
+  }
+]

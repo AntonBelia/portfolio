@@ -1,0 +1,5 @@
+runtime: nodejs18
+service: server
+
+env_variables:
+  GAE_DB_SOCKET: "/cloudsql/belia-staging:us-west1:belia-portfolio"
