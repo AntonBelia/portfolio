@@ -6,6 +6,8 @@ This project is a full-stack application that combines both client-side and serv
 
 The project is deployed on the Google Cloud Platform (GCP), providing high availability and scalability. Various GCP services are utilized to ensure reliability and security, such as Google App Engine, Google Cloud SQL.
 
+The working instance is deployed on [GCP](https://client-dot-belia-staging.uw.r.appspot.com/)
+
 ## Functionality
 
 This application demonstrates the developer's skills in key aspects of web development:
@@ -26,13 +28,16 @@ Before running the project, ensure the following components are installed:
 
 ## Deployment Instructions
 
-1.Clone this repository to your local machine using the command git clone.
-2.Navigate to the project folder with cd project-name.
-3.Install dependencies for the client-side using npm install.
-4.Install dependencies for the server-side using cd server followed by npm install.
-5.Start the server-side by running npm start in the server folder.
-6.Navigate back to the root folder of the project and start the client-side using npm start.
-7.Open a web browser and go to http://localhost:3000 to view the application.
+ - 1.Clone this repository to your local machine using the command git clone.
+ - 2.Navigate to the project folder with cd project-name.
+ - 3.Install dependencies for the client-side using npm install.
+ - 4.Build the client-side application using npm run build.
+ - 5.Install dependencies for the server-side using cd server followed by npm install.
+ - 6.Additionally, ensure to set up a database on Google Cloud Platform (GCP) and configure the server-side with your database credentials for full deployment functionality.
+ - 7.Start the server-side by running npm start in the server folder.
+ - 8.Navigate back to the root folder of the project and start the client-side using npm start.
+ - 9.Open a web browser and go to http://localhost:3000 to view the application.
+ - 10.Navigate back to the root folder of the project and deploy the application to Google Cloud Platform (GCP) by executing the command gcloud app deploy client/clientAppEngine.yaml server/serverAppEngine.yaml.
 
 ## Testing
 
@@ -40,21 +45,3 @@ The project includes built-in tests to ensure its functionality correctness. To 
 
  - For running Cypress tests: npx cypress open
  - For running React Testing Library tests: npm run test
-
-## Making Changes
-
-If you wish to make changes to this project, please follow these steps:
-
- - Create a new branch for working on the new feature: git checkout -b feature/new-feature.
- - Make the necessary changes in the respective files.
- - After completing the feature work, commit the changes: git commit -m "Add new feature".
- - Push your branch to the remote repository: git push origin feature/new-feature.
- - Create a Pull Request in this repository to discuss and merge your work into the main branch.
-
-## License
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-This project is distributed under the MIT License. You are free to use, copy, and modify the code under the terms of this license.
